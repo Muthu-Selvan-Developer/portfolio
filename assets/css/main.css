@@ -1507,3 +1507,10 @@ section,
       font-size: 0.95rem;
       color: #6c757d;
     }
+
+@media screen and (max-width: 768px) {
+  
+  .hero {
+    min-height: 60vh;
+} 
+}
