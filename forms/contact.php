@@ -8,7 +8,7 @@ $mail->ajax = true;
 
 $mail->smtp = array(
   'host'       => 'smtp.gmail.com',
-  'username'   => 'muthuselvan39820@gmail.com',
+  'username'   => 'muthu9677641018@gmail.com',
   'password'   => 'szcb rzho honx cpht',  // Use App Password, not main password
   'port'       => '587',
   'encryption' => 'tls'
