@@ -1513,4 +1513,7 @@ section,
   .hero {
     min-height: 60vh;
 } 
+  .row.justify-content-center {
+    margin-left: 30px;
+}
 }
