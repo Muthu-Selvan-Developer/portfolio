@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muthu Selvan - Python Developer</title>
-    <meta name="description" content="Experienced Python and Django developer offering web development, automation, and scraping services.">
+    <title>MSORA - Python Developer | Web Development | Digital Marketing | Coimbatore</title>
+    <meta name="description" content="MSORA - Professional Python & Django Developer, Web Application Developer, and Digital Marketing Expert in Coimbatore, Tamil Nadu. Offering web development, mobile app development, SEO, social media marketing, and business automation services.">
+    <meta name="keywords" content="MSORA, MSORA Coimbatore, Python developer Coimbatore, Django developer Tamil Nadu, web development Coimbatore, web application development Coimbatore, mobile app development Coimbatore, digital marketing services Coimbatore, SEO services Coimbatore, social media marketing Tamil Nadu, freelance developer Coimbatore, web scraping services, automation tools, WordPress developer Coimbatore, e-commerce development, full stack developer Tamil Nadu, React developer, software development Coimbatore, custom web applications, API development, cloud deployment AWS, business website development, responsive web design, digital marketing agency Coimbatore, online marketing services, Google Ads management, Facebook marketing, Instagram marketing, content marketing, email marketing Coimbatore, website optimization, local SEO Tamil Nadu, startup development services, SMM services Coimbatore, web design Coimbatore, UI/UX design, landing page development, business automation, CRM development, inventory management system, billing software development">
+    <meta name="author" content="MSORA - Muthu Selvan">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="IN-TN">
+    <meta name="geo.placename" content="Coimbatore">
+    <link rel="canonical" href="https://developermuthu.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://developermuthu.com/">
+    <meta property="og:title" content="MSORA - Python Developer | Web Development | Digital Marketing Expert in Coimbatore">
+    <meta property="og:description" content="MSORA - Professional web development, mobile app development, and digital marketing services in Coimbatore, Tamil Nadu. Expert in Python, Django, SEO, and social media marketing.">
+    <meta property="og:image" content="https://developermuthu.com/assets/img/logo.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://developermuthu.com/">
+    <meta name="twitter:title" content="MSORA - Python Developer | Digital Marketing | Coimbatore">
+    <meta name="twitter:description" content="MSORA - Expert web developer and digital marketer offering custom solutions in Coimbatore, Tamil Nadu.">
+    <meta name="twitter:image" content="https://developermuthu.com/assets/img/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -94,8 +114,39 @@
 
         .logo {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: white;
+            font-size: 1.3rem;
+            letter-spacing: -1px;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+        }
+
+        .logo-text {
             background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -658,7 +709,10 @@
     </div>
 
     <nav>
-        <div class="logo">DevMuthu</div>
+        <div class="logo">
+            <div class="logo-icon">MS</div>
+            <span class="logo-text">MSORA</span>
+        </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -674,7 +728,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hi, I'm <span class="gradient-text">Muthu Selvan</span></h1>
-            <p>Full Stack Python Developer | Django Expert | Web Automation Specialist</p>
+            <p>Full Stack Python Developer | Digital Marketing Expert | Web & App Development Specialist in Coimbatore</p>
             <div class="cta-buttons">
                 <a href="#portfolio" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -692,7 +746,7 @@
     <section id="about">
         <div class="section-title fade-in">
             <h2>About Me</h2>
-            <p>I'm a Full Stack Python Developer with practical experience in backend and frontend development. My expertise includes building Django-based applications, web scraping tools, and cloud-hosted platforms.</p>
+            <p>I'm a Full Stack Python Developer and Digital Marketing Expert based in Coimbatore, Tamil Nadu. Specializing in web application development, mobile app development, SEO optimization, and comprehensive digital marketing strategies to help businesses grow online.</p>
         </div>
 
         <div class="about-grid fade-in">
@@ -700,20 +754,26 @@
                 <i class="fas fa-user" style="font-size: 15rem; color: rgba(255,255,255,0.1);"></i>
             </div>
             <div class="about-content">
-                <h3>Web & Python Developer</h3>
-                <p>I build efficient and scalable web applications using Django, Python, and modern frontend tools. Whether it's automating workflows, scraping data, or designing responsive UIs, I deliver results tailored to your business needs.</p>
-                <p>Experienced Full Stack Developer with a focus on Python and Django. Specialized in web scraping, automation, and full-stack development with modern technologies including Bootstrap 5, MySQL, and AWS.</p>
+                <h3>Web Developer & Digital Marketing Specialist</h3>
+                <p>I build efficient and scalable web applications using Django, Python, and modern frontend tools. As a digital marketing expert, I help businesses increase their online visibility through SEO, social media marketing, Google Ads, and content marketing strategies.</p>
+                <p>Based in Coimbatore, Tamil Nadu, I specialize in creating custom web applications, mobile apps, and implementing result-driven digital marketing campaigns. From e-commerce platforms to business automation tools, I deliver comprehensive solutions that combine technical excellence with marketing expertise.</p>
                 <div class="skills">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Django</span>
-                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">Python Development</span>
+                    <span class="skill-tag">Django & REST APIs</span>
+                    <span class="skill-tag">Web Application</span>
+                    <span class="skill-tag">Mobile App Development</span>
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO Optimization</span>
+                    <span class="skill-tag">Social Media Marketing</span>
+                    <span class="skill-tag">Google Ads</span>
+                    <span class="skill-tag">Content Marketing</span>
                     <span class="skill-tag">Web Scraping</span>
-                    <span class="skill-tag">WordPress</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Bootstrap 5</span>
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">WordPress Development</span>
+                    <span class="skill-tag">E-commerce Solutions</span>
+                    <span class="skill-tag">React & JavaScript</span>
+                    <span class="skill-tag">Bootstrap & UI/UX</span>
+                    <span class="skill-tag">MySQL Database</span>
+                    <span class="skill-tag">AWS Cloud</span>
                 </div>
             </div>
         </div>
@@ -745,7 +805,7 @@
     <section id="portfolio">
         <div class="section-title fade-in">
             <h2>My Portfolio</h2>
-            <p>I specialize in building real-world applications that solve business challenges through automation, data collection, and seamless interfaces.</p>
+            <p>Delivering comprehensive web development and digital marketing solutions in Coimbatore, Tamil Nadu. From custom applications to result-driven marketing campaigns.</p>
         </div>
 
         <div class="portfolio-grid">
@@ -808,13 +868,33 @@
                     <p>Scrapes and displays the latest news articles from trusted sources. Built with Django, integrated caching, and filtering by keyword or source.</p>
                 </div>
             </div>
+
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Digital Marketing Campaign for Local Business</h3>
+                    <p>Comprehensive SEO and social media marketing campaign for a Coimbatore-based retail business, achieving 250% increase in organic traffic and 180% boost in social engagement within 6 months.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Mobile App Development</h3>
+                    <p>Custom mobile applications for iOS and Android platforms. Built using React Native and Flutter with seamless backend integration for business management and customer engagement.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="services">
         <div class="section-title fade-in">
-            <h2>Services</h2>
-            <p>I offer clean, scalable, and efficient software development solutions tailored to your business goals.</p>
+            <h2>Services in Coimbatore, Tamil Nadu</h2>
+            <p>Complete web development, app development, and digital marketing solutions for businesses in Coimbatore and across Tamil Nadu.</p>
         </div>
 
         <div class="services-grid">
@@ -822,16 +902,72 @@
                 <div class="service-icon">
                     <i class="fas fa-desktop"></i>
                 </div>
-                <h3>Web Design</h3>
-                <p>Clean and responsive web design that ensures a modern look and seamless user experience.</p>
+                <h3>Web Application Development</h3>
+                <p>Custom web applications built with Python, Django, and modern frameworks. Scalable solutions for businesses in Coimbatore including CRM, inventory management, and e-commerce platforms.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile App Development</h3>
+                <p>Native and cross-platform mobile app development for Android and iOS. Perfect for startups and businesses in Tamil Nadu looking to expand their digital presence.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>SEO Services Coimbatore</h3>
+                <p>Complete SEO optimization to rank your business on Google's first page. Local SEO for Coimbatore businesses, keyword research, on-page and off-page optimization, and technical SEO audits.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-hashtag"></i>
+                </div>
+                <h3>Social Media Marketing</h3>
+                <p>Strategic social media management for Facebook, Instagram, LinkedIn, and Twitter. Content creation, ad campaigns, and community management to grow your brand in Tamil Nadu market.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-ad"></i>
+                </div>
+                <h3>Google Ads & PPC Management</h3>
+                <p>Targeted Google Ads campaigns for businesses in Coimbatore. Pay-per-click management, keyword bidding, and conversion optimization to maximize your ROI and drive qualified leads.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <h3>Content Marketing & Copywriting</h3>
+                <p>Engaging content creation for websites, blogs, and social media. SEO-optimized articles, product descriptions, and marketing copy that converts visitors into customers.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h3>Email Marketing Campaigns</h3>
+                <p>Automated email marketing solutions with personalized campaigns. Newsletter design, drip campaigns, and customer retention strategies for Tamil Nadu businesses.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Analytics & Performance Tracking</h3>
+                <p>Google Analytics setup, conversion tracking, and detailed performance reports. Data-driven insights to optimize your digital marketing strategy and improve business growth.</p>
             </div>
 
             <div class="service-card fade-in">
                 <div class="service-icon">
                     <i class="fas fa-code"></i>
                 </div>
-                <h3>Web Development</h3>
-                <p>Robust and fully functional websites with optimized frontend and backend integration.</p>
+                <h3>Custom Web Development</h3>
+                <p>Responsive website design and development using HTML5, CSS3, JavaScript, React, and Bootstrap. Modern, fast-loading websites optimized for all devices.</p>
             </div>
 
             <div class="service-card fade-in">
@@ -839,7 +975,7 @@
                     <i class="fab fa-python"></i>
                 </div>
                 <h3>Python & Django Development</h3>
-                <p>Custom applications and APIs using Django and Python for scalable backend solutions.</p>
+                <p>Backend development with Python and Django framework. RESTful APIs, database design, and server-side logic for complex web applications in Coimbatore.</p>
             </div>
 
             <div class="service-card fade-in">
@@ -847,31 +983,23 @@
                     <i class="fas fa-robot"></i>
                 </div>
                 <h3>Web Scraping & Automation</h3>
-                <p>Automated tools to extract data and streamline repetitive tasks for better productivity.</p>
-            </div>
-
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <i class="fas fa-cloud-upload-alt"></i>
-                </div>
-                <h3>Cloud Deployment</h3>
-                <p>Secure deployment of apps on AWS with optimized database structures and backups.</p>
+                <p>Data extraction tools and business process automation. Save time and increase efficiency with custom automation scripts for repetitive tasks.</p>
             </div>
 
             <div class="service-card fade-in">
                 <div class="service-icon">
                     <i class="fab fa-wordpress"></i>
                 </div>
-                <h3>WordPress Solutions</h3>
-                <p>Tailored WordPress sites and CMS systems to help manage your content effectively.</p>
+                <h3>WordPress Development</h3>
+                <p>Professional WordPress websites with custom themes and plugins. E-commerce setup with WooCommerce for online stores in Coimbatore and Tamil Nadu.</p>
             </div>
         </div>
     </section>
 
     <section>
         <div class="section-title fade-in">
-            <h2>Testimonials</h2>
-            <p>Trusted by clients for reliable solutions, on-time delivery, and technical excellence.</p>
+            <h2>Client Testimonials</h2>
+            <p>Trusted by businesses in Coimbatore and Tamil Nadu for web development and digital marketing excellence.</p>
         </div>
 
         <div class="testimonials fade-in">
@@ -894,8 +1022,8 @@
 
     <section id="contact">
         <div class="section-title fade-in">
-            <h2>Get In Touch</h2>
-            <p>Looking for a reliable developer to build, automate, or scale your platform? I'm available for freelance, contract, or long-term projects.</p>
+            <h2>Contact - Coimbatore, Tamil Nadu</h2>
+            <p>Looking for web development, mobile app development, or digital marketing services in Coimbatore? Let's discuss your project and grow your business online.</p>
         </div>
 
         <div class="contact-grid fade-in">
@@ -949,8 +1077,12 @@
     </section>
 
     <footer>
-        <h3 class="gradient-text">Developer Muthu</h3>
-        <p style="margin: 1rem 0;">Turning Ideas into Working Software</p>
+        <div class="logo" style="justify-content: center; margin-bottom: 1rem;">
+            <div class="logo-icon">MS</div>
+            <span class="logo-text" style="font-size: 2rem;">MSORA</span>
+        </div>
+        <p style="margin: 1rem 0;">Web Development | Mobile App Development | Digital Marketing Services in Coimbatore, Tamil Nadu</p>
+        <p style="color: var(--text-muted); margin: 0.5rem 0;">Python Developer | Django Expert | SEO Specialist | Social Media Marketing</p>
         <div class="social-links" style="margin: 2rem 0;">
             <a href="https://github.com/Muthu-Selvan-Developer" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/muthu-selvan-s-0117ab188/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -958,7 +1090,7 @@
             <a href="https://www.instagram.com/muthu_ms21/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://wa.me/919344089762" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <p>&copy; 2025 Developer Muthu. All Rights Reserved.</p>
+        <p>&copy; 2025 MSORA. All Rights Reserved.</p>
     </footer>
 
     <script>
