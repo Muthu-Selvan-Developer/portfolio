@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Eedhal Technology | Latest Insights and Tech Updates</title>
+    <meta name="description" content="Stay updated with the latest insights, tutorials, and industry trends from Eedhal Technology's blog on web development, app development, and digital marketing.">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="stylesheet" href="asset/css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="asset/img/logo-ms.png" alt="Eedhal Technology Logo" height="40" class="d-inline-block ">
+                <span class="ms-2 fw-bold">Eedhal Technology</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-dark-secondary">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">Eedhal Technology <span class="text-gradient">Blog</span></h1>
+                    <h2 class="hero-subtitle">Insights, Tutorials & Industry Trends</h2>
+                    <p class="hero-description">Stay updated with the latest in web development, app development, game development, and digital marketing.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-hero-image">
+                        <div class="floating-card">
+                            <i class="fas fa-blog fa-3x text-primary mb-3"></i>
+                            <h5>Articles</h5>
+                        </div>
+                        <div class="floating-card delay-1">
+                            <i class="fas fa-graduation-cap fa-3x text-purple mb-3"></i>
+                            <h5>Tutorials</h5>
+                        </div>
+                        <div class="floating-card delay-2">
+                            <i class="fas fa-chart-line fa-3x text-cyan mb-3"></i>
+                            <h5>Trends</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5" data-aos="fade-up">
+                    <div class="featured-post glassmorphism p-5">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- IMAGE: blog-featured - featured blog post image -->
+                                <img src="asset/img/blog/post-7.jpg" alt="Featured Blog Post" class="img-fluid rounded">
+                            </div>
+                            <div class="col-lg-6">
+                                <span class="badge bg-primary mb-3">Featured</span>
+                                <h2 class="mb-3">The Future of Web Development: Trends to Watch in 2024</h2>
+                                <p class="mb-4">Explore the latest trends shaping the web development landscape, from AI integration to progressive web apps and beyond.</p>
+                                <div class="post-meta mb-4">
+                                    <span class="me-3"><i class="fas fa-user me-1"></i> Muthu Selvan</span>
+                                    <span class="me-3"><i class="fas fa-calendar me-1"></i> March 15, 2024</span>
+                                    <span><i class="fas fa-clock me-1"></i> 8 min read</span>
+                                </div>
+                                <a href="blog-post.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="py-3 bg-dark-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="blog-categories text-center" data-aos="fade-up">
+                        <button class="category-btn active" data-category="all">All Posts</button>
+                        <button class="category-btn" data-category="web-development">Web Development</button>
+                        <button class="category-btn" data-category="app-development">App Development</button>
+                        <button class="category-btn" data-category="game-development">Game Development</button>
+                        <button class="category-btn" data-category="digital-marketing">Digital Marketing</button>
+                        <button class="category-btn" data-category="tutorials">Tutorials</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-5 bg-dark-secondary">
+        <div class="container">
+            <div class="row g-4" id="blogGrid">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6 blog-post" data-category="web-development" data-aos="fade-up" data-aos-delay="100">
+                    <article class="blog-card h-100">
+                        <div class="blog-image">
+                            <!-- IMAGE: blog-1 - blog post thumbnail -->
+                            <img src="asset/img/blog/post-1.jpg" alt="Django Best Practices" class="img-fluid">
+                            <div class="blog-category">Web Development</div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <h4 class="blog-title mb-3">Django Best Practices for Scalable Web Applications</h4>
+                            <p class="blog-excerpt mb-3">Learn essential Django patterns and practices to build maintainable and scalable web applications.</p>
+                            <div class="blog-meta mb-3">
+                                <span class="me-3"><i class="fas fa-user me-1"></i> Muthu Selvan</span>
+                                <span><i class="fas fa-calendar me-1"></i> March 10, 2025</span>
+                            </div>
+                            <a href="blog-post-django.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6 blog-post" data-category="app-development" data-aos="fade-up" data-aos-delay="200">
+                    <article class="blog-card h-100">
+                        <div class="blog-image">
+                            <!-- IMAGE: blog-2 - blog post thumbnail -->
+                            <img src="asset/img/blog/post-2.jpg" alt="React Native vs Flutter" class="img-fluid">
+                            <div class="blog-category">App Development</div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <h4 class="blog-title mb-3">React Native vs Flutter: Choosing the Right Framework</h4>
+                            <p class="blog-excerpt mb-3">A comprehensive comparison of React Native and Flutter for cross-platform mobile development.</p>
+                            <div class="blog-meta mb-3">
+                                <span class="me-3"><i class="fas fa-user me-1"></i> Sugan</span>
+                                <span><i class="fas fa-calendar me-1"></i> March 8, 2025</span>
+                            </div>
+                            <a href="blog-post-react-native.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6 blog-post" data-category="game-development" data-aos="fade-up" data-aos-delay="300">
+                    <article class="blog-card h-100">
+                        <div class="blog-image">
+                            <!-- IMAGE: blog-3 - blog post thumbnail -->
+                            <img src="asset/img/blog/post-3.jpg" alt="Unity Game Optimization" class="img-fluid">
+                            <div class="blog-category">Game Development</div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <h4 class="blog-title mb-3">Unity Performance Optimization Tips for Mobile Games</h4>
+                            <p class="blog-excerpt mb-3">Essential techniques to optimize your Unity games for better performance on mobile devices.</p>
+                            <div class="blog-meta mb-3">
+                                <span class="me-3"><i class="fas fa-user me-1"></i> Sugan</span>
+                                <span><i class="fas fa-calendar me-1"></i> March 5, 2025</span>
+                            </div>
+                            <a href="blog-post-unity.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-lg-4 col-md-6 blog-post" data-category="digital-marketing" data-aos="fade-up" data-aos-delay="400">
+                    <article class="blog-card h-100">
+                        <div class="blog-image">
+                            <!-- IMAGE: blog-4 - blog post thumbnail -->
+                            <img src="asset/img/blog/post-4.jpg" alt="SEO Strategies 2024" class="img-fluid">
+                            <div class="blog-category">Digital Marketing</div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <h4 class="blog-title mb-3">SEO Strategies That Actually Work in 2025</h4>
+                            <p class="blog-excerpt mb-3">Discover the latest SEO techniques and strategies to improve your website's search rankings.</p>
+                            <div class="blog-meta mb-3">
+                                <span class="me-3"><i class="fas fa-user me-1"></i> Sugan</span>
+                                <span><i class="fas fa-calendar me-1"></i> March 3, 2025</span>
+                            </div>
+                            <a href="blog-post-seo.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-lg-4 col-md-6 blog-post" data-category="tutorials" data-aos="fade-up" data-aos-delay="500">
+                    <article class="blog-card h-100">
+                        <div class="blog-image">
+                            <!-- IMAGE: blog-5 - blog post thumbnail -->
+                            <img src="asset/img/blog/post-5.jpg" alt="Python Web Scraping" class="img-fluid">
+                            <div class="blog-category">Tutorials</div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <h4 class="blog-title mb-3">Complete Guide to Web Scraping with Python</h4>
+                            <p class="blog-excerpt mb-3">Step-by-step tutorial on web scraping using Python, BeautifulSoup, and Selenium.</p>
+                            <div class="blog-meta mb-3">
+                                <span class="me-3"><i class="fas fa-user me-1"></i> Muthu Selvan</span>
+                                <span><i class="fas fa-calendar me-1"></i> March 1, 2025</span>
+                            </div>
+                            <a href="blog-post-scraping.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-lg-4 col-md-6 blog-post" data-category="web-development" data-aos="fade-up" data-aos-delay="600">
+                    <article class="blog-card h-100">
+                        <div class="blog-image">
+                            <!-- IMAGE: blog-6 - blog post thumbnail -->
+                            <img src="asset/img/blog/post-6.jpg" alt="Progressive Web Apps" class="img-fluid">
+                            <div class="blog-category">Web Development</div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <h4 class="blog-title mb-3">Building Progressive Web Apps: A Complete Guide</h4>
+                            <p class="blog-excerpt mb-3">Learn how to create fast, reliable, and engaging Progressive Web Apps (PWAs).</p>
+                            <div class="blog-meta mb-3">
+                                <span class="me-3"><i class="fas fa-user me-1"></i> Muthu Selvan</span>
+                                <span><i class="fas fa-calendar me-1"></i> February 28, 2025</span>
+                            </div>
+                            <a href="blog-post-pwa.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <nav aria-label="Blog pagination" data-aos="fade-up">
+                        <ul class="pagination justify-content-center" id="blogPagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" data-page="prev">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#" data-page="1">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" data-page="next">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="section-title">Stay Updated</h2>
+                    <p class="lead mb-4">Subscribe to our newsletter for the latest insights, tutorials, and industry updates.</p>
+                    <form class="newsletter-signup">
+                        <div class="input-group input-group-lg">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="asset/img/logo-ms.png" alt="Eedhal Technology Logo" height="40" class="mb-3">
+                        <h5>Eedhal Technology</h5>
+                        <p>Transforming Ideas Into Digital Reality</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muthu-selvan-s-0117ab188/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/muthu_ms21/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <!-- <li><a href="careers.html">Careers</a></li> -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">Game Development</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="footer-title">Newsletter</h6>
+                    <p>Stay updated with our latest projects and insights</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="footer-copyright">&copy; 2025 Eedhal Technology. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        if (typeof emailjs !== 'undefined') { emailjs.init('cHcX4vsrfPkP4Ogrq'); }
+    </script>
+    <!-- Custom JS -->
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/effects.js"></script>
+    
+    <!-- Blog Filter and Pagination Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const blogPosts = document.querySelectorAll('.blog-post');
+            const postsPerPage = 6;
+            let currentPage = 1;
+            let filteredPosts = Array.from(blogPosts);
+            
+            // Category filtering
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Filter posts
+                    filteredPosts = Array.from(blogPosts).filter(post => {
+                        return category === 'all' || post.getAttribute('data-category') === category;
+                    });
+                    
+                    currentPage = 1;
+                    displayPosts();
+                    updatePagination();
+                });
+            });
+            
+            // Pagination
+            const paginationLinks = document.querySelectorAll('#blogPagination .page-link');
+            
+            paginationLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const page = this.getAttribute('data-page');
+                    
+                    if (page === 'prev' && currentPage > 1) {
+                        currentPage--;
+                    } else if (page === 'next' && currentPage < Math.ceil(filteredPosts.length / postsPerPage)) {
+                        currentPage++;
+                    } else if (!isNaN(page)) {
+                        currentPage = parseInt(page);
+                    }
+                    
+                    displayPosts();
+                    updatePagination();
+                });
+            });
+            
+            function displayPosts() {
+                // Hide all posts first
+                blogPosts.forEach(post => post.style.display = 'none');
+                
+                // Calculate start and end indices
+                const startIndex = (currentPage - 1) * postsPerPage;
+                const endIndex = startIndex + postsPerPage;
+                
+                // Show posts for current page
+                filteredPosts.slice(startIndex, endIndex).forEach(post => {
+                    post.style.display = 'block';
+                });
+            }
+            
+            function updatePagination() {
+                const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+                const pagination = document.getElementById('blogPagination');
+                
+                // Update pagination buttons
+                const prevBtn = pagination.querySelector('[data-page="prev"]').parentElement;
+                const nextBtn = pagination.querySelector('[data-page="next"]').parentElement;
+                
+                // Update prev button
+                if (currentPage <= 1) {
+                    prevBtn.classList.add('disabled');
+                } else {
+                    prevBtn.classList.remove('disabled');
+                }
+                
+                // Update next button
+                if (currentPage >= totalPages) {
+                    nextBtn.classList.add('disabled');
+                } else {
+                    nextBtn.classList.remove('disabled');
+                }
+                
+                // Update page numbers
+                const pageNumbers = pagination.querySelectorAll('[data-page]:not([data-page="prev"]):not([data-page="next"])');
+                pageNumbers.forEach(pageLink => {
+                    const pageNum = parseInt(pageLink.getAttribute('data-page'));
+                    const pageItem = pageLink.parentElement;
+                    
+                    if (pageNum === currentPage) {
+                        pageItem.classList.add('active');
+                    } else {
+                        pageItem.classList.remove('active');
+                    }
+                    
+                    // Show/hide page numbers based on total pages
+                    if (pageNum <= totalPages) {
+                        pageItem.style.display = 'block';
+                    } else {
+                        pageItem.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Initialize
+            displayPosts();
+            updatePagination();
+        });
+    </script>
+</body>
+</html>

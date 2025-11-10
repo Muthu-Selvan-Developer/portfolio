@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Progressive Web Apps: A Complete Guide - Eedhal Technology Blog</title>
+    <meta name="description" content="Learn how to create fast, reliable, and engaging Progressive Web Apps (PWAs) with this comprehensive guide.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Building Progressive Web Apps: A Complete Guide">
+    <meta property="og:description" content="Learn how to create fast, reliable, and engaging Progressive Web Apps (PWAs).">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://developermuthu.com/blog-post-pwa.html">
+    <meta property="og:image" content="https://developermuthu.com/asset/img/blog/post-6.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    <meta property="article:author" content="Muthu Selvan">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://developermuthu.com/asset/img/blog/post-6.jpg">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="stylesheet" href="asset/css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="asset/img/logo-ms.png" alt="Eedhal Technology Logo" height="40" class="d-inline-block ">
+                <span class="ms-2 fw-bold">Eedhal Technology</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <main class="py-5" style="margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- Back to Blog -->
+                    <div class="mb-4" data-aos="fade-up">
+                        <a href="blog.html" class="btn btn-outline-primary">
+                            <i class="fas fa-arrow-left me-2"></i>Back to Blog
+                        </a>
+                    </div>
+
+                    <!-- Blog Post -->
+                    <article class="blog-post-content glassmorphism p-5" data-aos="fade-up">
+                        <!-- Post Header -->
+                        <header class="mb-4">
+                            <span class="badge bg-primary mb-3">Web Development</span>
+                            <h1 class="text-gradient mb-3">Building Progressive Web Apps: A Complete Guide</h1>
+                            <div class="post-meta mb-4">
+                                <span class="me-3"><i class="fas fa-user me-1"></i> Muthu Selvan</span>
+                                <span class="me-3"><i class="fas fa-calendar me-1"></i> February 28, 2025</span>
+                                <span><i class="fas fa-clock me-1"></i> 10 min read</span>
+                            </div>
+                                                    
+                            <!-- Social Share Buttons -->
+                            <div class="social-share-buttons my-4 p-3" style="background: rgba(14, 165, 233, 0.1); border-radius: 10px; border: 1px solid rgba(14, 165, 233, 0.2);">
+                                <h6 class="mb-3" style="color: #0ea5e9; font-size: 14px; font-weight: 600;">Share this article:</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="#" class="btn btn-sm share-btn" data-share="facebook" style="background: #1877f2; color: white; border: none;">
+                                        <i class="fab fa-facebook-f"></i> Facebook
+                                    </a>
+                                    <a href="#" class="btn btn-sm share-btn" data-share="twitter" style="background: #1da1f2; color: white; border: none;">
+                                        <i class="fab fa-twitter"></i> Twitter
+                                    </a>
+                                    <a href="#" class="btn btn-sm share-btn" data-share="linkedin" style="background: #0077b5; color: white; border: none;">
+                                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                                    </a>
+                                    <a href="#" class="btn btn-sm share-btn" data-share="whatsapp" style="background: #25d366; color: white; border: none;">
+                                        <i class="fab fa-whatsapp"></i> WhatsApp
+                                    </a>
+                                    <button class="btn btn-sm" onclick="copyPageLink()" style="background: #6c757d; color: white; border: none;">
+                                        <i class="fas fa-link"></i> Copy Link
+                                    </button>
+                                </div>
+                            </div></header>
+
+                        <!-- Featured Image -->
+                        <div class="post-image mb-4">
+                            <!-- IMAGE: blog-6 - blog post thumbnail -->
+                            <img src="asset/img/blog/post-6.jpg" alt="Progressive Web Apps" class="img-fluid rounded">
+                        </div>
+
+                        <!-- Post Content -->
+                        <div class="post-content">
+                            <p class="lead">Progressive Web Apps (PWAs) combine the best of web and mobile apps, offering native-like experiences through web technologies. This guide will walk you through building fast, reliable, and engaging PWAs.</p>
+
+                            <h2 class="h4 text-primary mt-5 mb-3">What are Progressive Web Apps?</h2>
+                            <p>PWAs are web applications that use modern web capabilities to deliver app-like experiences. Key characteristics include:</p>
+                            <ul>
+                                <li><strong>Progressive:</strong> Work for every user, regardless of browser choice</li>
+                                <li><strong>Responsive:</strong> Fit any form factor: desktop, mobile, tablet</li>
+                                <li><strong>Connectivity Independent:</strong> Work offline or with poor connectivity</li>
+                                <li><strong>App-like:</strong> Feel like native apps with app-style interactions</li>
+                                <li><strong>Secure:</strong> Served via HTTPS to prevent tampering</li>
+                                <li><strong>Re-engageable:</strong> Enable push notifications</li>
+                                <li><strong>Installable:</strong> Can be installed on device home screen</li>
+                            </ul>
+
+                            <h2 class="h4 text-primary mt-5 mb-3">Core Technologies</h2>
+                            <h5>1. Service Workers</h5>
+                            <p>Service workers enable offline functionality and background sync:</p>
+                            <pre><code>// Register service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(registration => console.log('SW registered'))
+    .catch(error => console.log('SW registration failed'));
+}</code></pre>
+
+                            <h5>2. Web App Manifest</h5>
+                            <p>The manifest provides metadata about your app:</p>
+                            <pre><code>{
+  "name": "Eedhal Technology PWA",
+  "short_name": "Eedhal Technology",
+  "description": "Eedhal Technology Progressive Web App",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}</code></pre>
+
+                            <h2 class="h4 text-primary mt-5 mb-3">Building Your First PWA</h2>
+                            <h5>Step 1: Create the Basic Structure</h5>
+                            <pre><code><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My PWA</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0ea5e9">
+</head>
+<body>
+  <div id="app">
+    <h1>Welcome to My PWA</h1>
+  </div>
+  <script src="/js/app.js"></script>
+    
+    <!-- Social Share Functionality -->
+    <script>
+    document.querySelectorAll('.share-btn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const shareType = this.getAttribute('data-share');
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+            switch(shareType) {
+                case 'facebook': shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`; break;
+                case 'twitter': shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`; break;
+                case 'linkedin': shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`; break;
+                case 'whatsapp': shareUrl = `https://wa.me/?text=${title}%20${url}`; break;
+            }
+            if (shareUrl) window.open(shareUrl, '_blank', 'width=600,height=400');
+        });
+    });
+    function copyPageLink() {
+        const url = window.location.href;
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(url).then(() => alert(' Link copied!'));
+        } else {
+            const input = document.createElement('input');
+            input.value = url;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            alert(' Link copied!');
+        }
+    }
+    </script>
+</body>
+</html></code></pre>
+
+                            <h5>Step 2: Implement Service Worker</h5>
+                            <pre><code>// sw.js
+const CACHE_NAME = 'Eedhal Technology-pwa-v1';
+const urlsToCache = [
+  '/',
+  '/css/style.css',
+  '/js/app.js',
+  '/images/logo.png'
+];
+
+// Install event
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(urlsToCache))
+  );
+});
+
+// Fetch event
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        return response || fetch(event.request);
+      })
+  );
+});</code></pre>
+
+                            <h2 class="h4 text-primary mt-5 mb-3">Advanced PWA Features</h2>
+                            <h5>1. Push Notifications</h5>
+                            <pre><code>// Request notification permission
+Notification.requestPermission().then(permission => {
+  if (permission === 'granted') {
+    // Subscribe to push notifications
+    navigator.serviceWorker.ready.then(registration => {
+      return registration.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: 'your-vapid-key'
+      });
+    });
+  }
+});</code></pre>
+
+                            <h5>2. Background Sync</h5>
+                            <pre><code>// Register background sync
+navigator.serviceWorker.ready.then(registration => {
+  return registration.sync.register('background-sync');
+});
+
+// In service worker
+self.addEventListener('sync', event => {
+  if (event.tag === 'background-sync') {
+    event.waitUntil(doBackgroundSync());
+  }
+});</code></pre>
+
+                            <h2 class="h4 text-primary mt-5 mb-3">PWA Performance Optimization</h2>
+                            <ul>
+                                <li><strong>App Shell Architecture:</strong> Cache the app shell for instant loading</li>
+                                <li><strong>Lazy Loading:</strong> Load content as needed</li>
+                                <li><strong>Code Splitting:</strong> Split JavaScript bundles</li>
+                                <li><strong>Image Optimization:</strong> Use WebP format and responsive images</li>
+                                <li><strong>Critical CSS:</strong> Inline critical CSS for faster rendering</li>
+                            </ul>
+
+                            <h2 class="h4 text-primary mt-5 mb-3">Testing and Debugging PWAs</h2>
+                            <ul>
+                                <li><strong>Lighthouse:</strong> Audit PWA performance and compliance</li>
+                                <li><strong>Chrome DevTools:</strong> Debug service workers and manifest</li>
+                                <li><strong>PWA Builder:</strong> Microsoft's PWA testing tool</li>
+                                <li><strong>Workbox:</strong> Google's PWA development library</li>
+                            </ul>
+
+                            <h2 class="h4 text-primary mt-5 mb-3">Deployment Considerations</h2>
+                            <ul>
+                                <li><strong>HTTPS Required:</strong> PWAs must be served over HTTPS</li>
+                                <li><strong>App Store Distribution:</strong> PWAs can be distributed through app stores</li>
+                                <li><strong>Update Strategies:</strong> Implement proper update mechanisms</li>
+                                <li><strong>Analytics:</strong> Track PWA-specific metrics</li>
+                            </ul>
+
+                            <h2 class="h4 text-primary mt-5 mb-3">PWA vs Native Apps</h2>
+                            <p><strong>PWA Advantages:</strong></p>
+                            <ul>
+                                <li>Single codebase for all platforms</li>
+                                <li>No app store approval process</li>
+                                <li>Automatic updates</li>
+                                <li>Smaller download size</li>
+                                <li>SEO benefits</li>
+                            </ul>
+
+                            <p><strong>Native App Advantages:</strong></p>
+                            <ul>
+                                <li>Full access to device APIs</li>
+                                <li>Better performance for complex apps</li>
+                                <li>App store discoverability</li>
+                                <li>More advanced offline capabilities</li>
+                            </ul>
+
+                            <h2 class="h4 text-primary mt-5 mb-3">Conclusion</h2>
+                            <p>Progressive Web Apps represent the future of web development, offering the best of both web and mobile worlds. They provide excellent user experiences while being cost-effective to develop and maintain.</p>
+
+                            <p>At Eedhal Technology, we specialize in building high-performance PWAs that deliver native-like experiences across all devices. Whether you're looking to enhance an existing web app or build a new PWA from scratch, we can help you leverage this powerful technology to reach your users more effectively.</p>
+                        </div>
+
+                        <!-- Post Footer -->
+                        <footer class="post-footer mt-5 pt-4 border-top border-secondary">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="author-info d-flex align-items-center">
+                                        <!-- IMAGE: team/muthu.jpg - author photo -->
+                                        <img src="asset/img/team/muthu.jpg" alt="Muthu Selvan" class="rounded-circle me-3" width="60" height="60">
+                                        <div>
+                                            <h6 class="mb-1">Muthu Selvan</h6>
+                                            <p class=" mb-0">Founder & Lead Developer at Eedhal Technology</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                                    <div class="social-share">
+                                        <span class="me-2">Share:</span>
+                                        <a href="#" class="social-link me-2"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="social-link me-2"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="asset/img/logo-ms.png" alt="Eedhal Technology Logo" height="40" class="mb-3">
+                        <h5>Eedhal Technology</h5>
+                        <p>Transforming Ideas Into Digital Reality</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muthu-selvan-s-0117ab188/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/muthu_ms21/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <!-- <li><a href="careers.html">Careers</a></li> -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">Game Development</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="footer-title">Newsletter</h6>
+                    <p>Stay updated with our latest projects and insights</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="footer-copyright">&copy; 2025 Eedhal Technology. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        if (typeof emailjs !== 'undefined') { emailjs.init('cHcX4vsrfPkP4Ogrq'); }
+    </script>
+    <!-- Custom JS -->
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/effects.js"></script>
+    
+    <!-- Social Share Functionality -->
+    <script>
+    document.querySelectorAll('.share-btn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const shareType = this.getAttribute('data-share');
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+            switch(shareType) {
+                case 'facebook': shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`; break;
+                case 'twitter': shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`; break;
+                case 'linkedin': shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`; break;
+                case 'whatsapp': shareUrl = `https://wa.me/?text=${title}%20${url}`; break;
+            }
+            if (shareUrl) window.open(shareUrl, '_blank', 'width=600,height=400');
+        });
+    });
+    function copyPageLink() {
+        const url = window.location.href;
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(url).then(() => alert(' Link copied!'));
+        } else {
+            const input = document.createElement('input');
+            input.value = url;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            alert(' Link copied!');
+        }
+    }
+    </script>
+</body>
+</html>

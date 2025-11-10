@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://developermuthu.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow test files
+Disallow: /test-email.html
+Disallow: /*.ps1$
+
+# Allow all asset
+Allow: /asset/
+Allow: /asset/css/
+Allow: /asset/js/
+Allow: /asset/img/
+
+# Allow all pages
+Allow: /*.html$
+Allow: /*.json$
