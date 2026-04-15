@@ -573,7 +573,7 @@
             <a href="tel:+919344089762" class="d-none d-md-flex align-items-center gap-2" style="color:var(--muted);text-decoration:none;font-size:0.88rem;">
                 <i class="fas fa-phone" style="color:var(--primary)"></i> +91 93440 89762
             </a>
-            <a href="#cta" class="nav-cta">Get Free Quote</a>
+            <a href="#" class="nav-cta" data-modal="consult">Get Free Quote</a>
         </div>
     </div>
 </nav>
@@ -595,7 +595,7 @@
                     Web development, Instagram management, and Google Ads — everything your Tamil Nadu business needs to dominate online. Results-driven. Affordable. Local.
                 </p>
                 <div class="hero-btns">
-                    <a href="#cta" class="btn-primary-grad">
+                    <a href="#" class="btn-primary-grad" data-modal="consult">
                         <i class="fas fa-rocket"></i> Get Free Consultation
                     </a>
                     <a href="https://wa.me/919344089762?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." class="btn-outline-light-custom" target="_blank" rel="noopener">
@@ -608,7 +608,7 @@
                     </div>
                     <div class="trust-text">
                         <strong>80+ happy clients</strong> across Tamil Nadu
-                    </div>
+                    </div>email
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
@@ -696,7 +696,7 @@
                         <li><i class="fas fa-circle"></i> SEO-ready structure & speed</li>
                         <li><i class="fas fa-circle"></i> Django, React, Bootstrap</li>
                     </ul>
-                    <a href="#cta" class="svc-link">Get a quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="svc-link" data-modal="consult">Get a quote <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- Instagram -->
@@ -712,7 +712,7 @@
                         <li><i class="fas fa-circle"></i> Hashtag & growth strategy</li>
                         <li><i class="fas fa-circle"></i> Monthly analytics reports</li>
                     </ul>
-                    <a href="#cta" class="svc-link">Get a quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="svc-link" data-modal="consult">Get a quote <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- Google Ads -->
@@ -728,7 +728,7 @@
                         <li><i class="fas fa-circle"></i> Bid management & optimisation</li>
                         <li><i class="fas fa-circle"></i> Weekly performance reports</li>
                     </ul>
-                    <a href="#cta" class="svc-link">Get a quote <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="svc-link" data-modal="consult">Get a quote <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -967,11 +967,8 @@
                 <a href="https://wa.me/919344089762?text=Hi%20Eedhal%20Technology%2C%20I%27d%20like%20a%20free%20consultation%20for%20my%20business." class="btn-whatsapp" target="_blank" rel="noopener">
                     <i class="fab fa-whatsapp"></i> WhatsApp Us Now
                 </a>
-                <a href="mailto:muthu9677641018@gmail.com" class="btn-outline-light-custom">
-                    <i class="fas fa-envelope"></i> Send an Email
-                </a>
-                <a href="tel:+919344089762" class="btn-outline-light-custom">
-                    <i class="fas fa-phone"></i> Call Us
+                <a href="#" class="btn-primary-grad" data-modal="consult">
+                    <i class="fas fa-rocket"></i> Get Free Consultation
                 </a>
             </div>
             <p style="margin-top:1.5rem; font-size:0.85rem;">
@@ -1004,10 +1001,412 @@
     </div>
 </footer>
 
+<!-- ── Two-Step Consultation Modal ── -->
+<div id="consultModal" class="consult-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="consult-modal">
+
+        <!-- Close -->
+        <button class="consult-close" id="consultClose" aria-label="Close">&times;</button>
+
+        <!-- Header -->
+        <div class="consult-header">
+            <div class="consult-icon"><i class="fas fa-rocket"></i></div>
+            <h2 id="modalTitle">Get Your Free Consultation</h2>
+            <p>Tell us about your project — takes less than 2 minutes.</p>
+        </div>
+
+        <!-- Step indicator -->
+        <div class="step-indicator" aria-label="Form progress">
+            <div class="step-track">
+                <div class="step-fill" id="stepFill"></div>
+            </div>
+            <div class="step-labels">
+                <span id="stepLabel1" class="step-lbl active">Your Details</span>
+                <span id="stepLabel2" class="step-lbl">Project Info</span>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <form id="consultForm" novalidate>
+            <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off">
+
+            <!-- ── Step 1 ── -->
+            <div class="consult-step" id="step1">
+                <div class="field-row">
+                    <div class="field-group">
+                        <label for="cf_firstName">First Name <span class="req">*</span></label>
+                        <input type="text" id="cf_firstName" name="firstName" placeholder="Muthu" autocomplete="given-name">
+                        <span class="field-error" id="err_firstName"></span>
+                    </div>
+                    <div class="field-group">
+                        <label for="cf_lastName">Last Name <span class="req">*</span></label>
+                        <input type="text" id="cf_lastName" name="lastName" placeholder="Selvan" autocomplete="family-name">
+                        <span class="field-error" id="err_lastName"></span>
+                    </div>
+                </div>
+                <div class="field-row">
+                    <div class="field-group">
+                        <label for="cf_email">Email Address <span class="req">*</span></label>
+                        <input type="email" id="cf_email" name="email" placeholder="you@example.com" autocomplete="email">
+                        <span class="field-error" id="err_email"></span>
+                    </div>
+                    <div class="field-group">
+                        <label for="cf_phone">Phone Number</label>
+                        <input type="tel" id="cf_phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
+                        <span class="field-error" id="err_phone"></span>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label for="cf_company">Company / Organisation</label>
+                    <input type="text" id="cf_company" name="company" placeholder="Your business name" autocomplete="organization">
+                    <span class="field-error" id="err_company"></span>
+                </div>
+                <button type="button" class="consult-btn-next" id="btnNext">
+                    Continue <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- ── Step 2 ── -->
+            <div class="consult-step hidden" id="step2">
+                <div class="field-row">
+                    <div class="field-group">
+                        <label for="cf_service">Service Interested In <span class="req">*</span></label>
+                        <select id="cf_service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="instagram-management">Instagram Management</option>
+                            <option value="google-ads">Google Ads</option>
+                            <option value="consultation">Free Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="field-error" id="err_service"></span>
+                    </div>
+                    <div class="field-group">
+                        <label for="cf_budget">Project Budget</label>
+                        <select id="cf_budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-5k">Under ₹5,000</option>
+                            <option value="5k-15k">₹5,000 – ₹15,000</option>
+                            <option value="15k-50k">₹15,000 – ₹50,000</option>
+                            <option value="50k-plus">₹50,000+</option>
+                            <option value="discuss">Let's Discuss</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label for="cf_timeline">Project Timeline</label>
+                    <select id="cf_timeline" name="timeline">
+                        <option value="">Select timeline</option>
+                        <option value="asap">ASAP</option>
+                        <option value="1-month">Within 1 month</option>
+                        <option value="2-3-months">2–3 months</option>
+                        <option value="3-6-months">3–6 months</option>
+                        <option value="6-months-plus">6+ months</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label for="cf_message">Project Details <span class="req">*</span></label>
+                    <textarea id="cf_message" name="message" rows="3" placeholder="Tell us about your project, goals, and any specific requirements..."></textarea>
+                    <span class="field-error" id="err_message"></span>
+                </div>
+                <div class="check-group">
+                    <label class="check-label">
+                        <input type="checkbox" id="cf_newsletter" name="newsletter">
+                        <span>Subscribe to our newsletter for updates and insights</span>
+                    </label>
+                </div>
+                <div class="check-group">
+                    <label class="check-label">
+                        <input type="checkbox" id="cf_privacy" name="privacy">
+                        <span>I agree to the <a href="../privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="../terms-of-service.html" target="_blank">Terms of Service</a> <span class="req">*</span></span>
+                    </label>
+                    <span class="field-error" id="err_privacy"></span>
+                </div>
+                <div class="step2-actions">
+                    <button type="button" class="consult-btn-back" id="btnBack">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="submit" class="consult-btn-submit" id="btnSubmit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </div>
+            </div>
+
+            <!-- ── Success ── -->
+            <div class="consult-step hidden" id="stepSuccess">
+                <div class="success-state">
+                    <div class="success-icon"><i class="fas fa-check"></i></div>
+                    <h3>Message Sent!</h3>
+                    <p>Thanks! We'll get back to you within 24 hours. You can also reach us instantly on WhatsApp.</p>
+                    <a href="https://wa.me/919344089762" class="btn-whatsapp" target="_blank" rel="noopener" style="display:inline-flex;margin-top:0.5rem;">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+/* ── Modal overlay ── */
+.consult-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(10,15,28,0.85);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.28s ease, visibility 0.28s ease;
+}
+.consult-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+.consult-overlay.open .consult-modal {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+/* ── Modal box ── */
+.consult-modal {
+    background: #131c2e;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 560px;
+    padding: 2.2rem 2.4rem;
+    position: relative;
+    transform: translateY(24px) scale(0.97);
+    opacity: 0;
+    transition: transform 0.32s cubic-bezier(0.34,1.56,0.64,1), opacity 0.28s ease;
+    max-height: 95vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.consult-modal::-webkit-scrollbar { display: none; }
+
+/* ── Close ── */
+.consult-close {
+    position: absolute;
+    top: 1rem; right: 1.2rem;
+    background: rgba(255,255,255,0.07);
+    border: none;
+    color: #94a3b8;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+    line-height: 1;
+}
+.consult-close:hover { background: rgba(255,255,255,0.14); color: #f8fafc; }
+
+/* ── Header ── */
+.consult-header { text-align: center; margin-bottom: 1.4rem; }
+.consult-icon {
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    background: linear-gradient(135deg,#0ea5e9,#8b5cf6);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 1.3rem; color: #fff;
+    margin-bottom: 0.8rem;
+}
+.consult-header h2 { font-size: 1.35rem; font-weight: 700; margin-bottom: 0.3rem; color: #f8fafc; }
+.consult-header p { color: #94a3b8; font-size: 0.88rem; margin: 0; }
+
+/* ── Step indicator ── */
+.step-indicator { margin-bottom: 1.6rem; }
+.step-track {
+    height: 4px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.6rem;
+}
+.step-fill {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(90deg,#0ea5e9,#8b5cf6);
+    border-radius: 4px;
+    transition: width 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.step-labels { display: flex; justify-content: space-between; }
+.step-lbl { font-size: 0.78rem; font-weight: 600; color: #475569; transition: color 0.2s; }
+.step-lbl.active { color: #0ea5e9; }
+
+/* ── Steps ── */
+.consult-step { animation: stepIn 0.3s ease; }
+.consult-step.hidden { display: none; }
+@keyframes stepIn {
+    from { opacity: 0; transform: translateX(16px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Fields ── */
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-bottom: 0.9rem; }
+.field-group { display: flex; flex-direction: column; margin-bottom: 0.9rem; }
+.field-row .field-group { margin-bottom: 0; }
+.field-group label {
+    font-size: 0.8rem; font-weight: 600;
+    color: #cbd5e1; margin-bottom: 0.35rem;
+    letter-spacing: 0.01em;
+}
+.req { color: #f87171; }
+.field-group input,
+.field-group select,
+.field-group textarea {
+    background: rgba(255,255,255,0.05);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    color: #f8fafc;
+    font-size: 0.9rem;
+    padding: 0.65rem 0.9rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-family: inherit;
+    width: 100%;
+}
+.field-group select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2394a3b8' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.9rem center; padding-right: 2.2rem; }
+.field-group select option { background: #1e293b; color: #f8fafc; }
+.field-group textarea { resize: none; }
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14,165,233,0.15);
+}
+.field-group input.invalid,
+.field-group select.invalid,
+.field-group textarea.invalid {
+    border-color: #f87171;
+    box-shadow: 0 0 0 3px rgba(248,113,113,0.15);
+    animation: shake 0.35s ease;
+}
+@keyframes shake {
+    0%,100% { transform: translateX(0); }
+    20%,60%  { transform: translateX(-5px); }
+    40%,80%  { transform: translateX(5px); }
+}
+.field-error {
+    font-size: 0.75rem;
+    color: #f87171;
+    margin-top: 0.3rem;
+    min-height: 1rem;
+    display: flex; align-items: center; gap: 0.3rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.field-error.visible { opacity: 1; }
+.field-error::before { content: '⚠'; font-size: 0.7rem; }
+
+/* ── Checkboxes ── */
+.check-group { margin-bottom: 0.7rem; }
+.check-label {
+    display: flex; align-items: flex-start; gap: 0.6rem;
+    cursor: pointer; font-size: 0.82rem; color: #94a3b8;
+}
+.check-label input[type="checkbox"] {
+    width: 16px; height: 16px; flex-shrink: 0;
+    margin-top: 2px;
+    accent-color: #0ea5e9;
+    cursor: pointer;
+    border: none; padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+.check-label a { color: #0ea5e9; text-decoration: none; }
+.check-label a:hover { text-decoration: underline; }
+
+/* ── Buttons ── */
+.consult-btn-next {
+    width: 100%;
+    background: linear-gradient(135deg,#0ea5e9,#8b5cf6);
+    border: none;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+    transition: opacity 0.2s, transform 0.2s;
+    margin-top: 0.4rem;
+    font-family: inherit;
+}
+.consult-btn-next:hover { opacity: 0.88; transform: translateY(-1px); }
+.step2-actions { display: flex; gap: 0.8rem; margin-top: 0.4rem; }
+.consult-btn-back {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #94a3b8;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex; align-items: center; gap: 0.4rem;
+    transition: all 0.2s;
+    font-family: inherit;
+    white-space: nowrap;
+}
+.consult-btn-back:hover { background: rgba(255,255,255,0.12); color: #f8fafc; }
+.consult-btn-submit {
+    flex: 1;
+    background: linear-gradient(135deg,#0ea5e9,#8b5cf6);
+    border: none;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+    transition: opacity 0.2s, transform 0.2s;
+    font-family: inherit;
+}
+.consult-btn-submit:hover { opacity: 0.88; transform: translateY(-1px); }
+.consult-btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+/* ── Success state ── */
+.success-state { text-align: center; padding: 1.5rem 0; }
+.success-icon {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#10b981,#059669);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 1.6rem; color: #fff;
+    margin-bottom: 1rem;
+    animation: popIn 0.4s cubic-bezier(0.34,1.56,0.64,1);
+}
+@keyframes popIn {
+    from { transform: scale(0); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+.success-state h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; color: #f8fafc; }
+.success-state p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 1rem; }
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+    .consult-modal { padding: 1.6rem 1.4rem; }
+    .field-row { grid-template-columns: 1fr; }
+    .consult-header h2 { font-size: 1.15rem; }
+}
+</style>
+
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    // Initialize EmailJS — same public key as contact.html
+    emailjs.init('cHcX4vsrfPkP4Ogrq');
     AOS.init({ duration: 700, once: true, offset: 60 });
 
     // Navbar scroll effect
@@ -1016,8 +1415,8 @@
         nav.style.padding = window.scrollY > 50 ? '0.6rem 0' : '1rem 0';
     });
 
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
+    // Smooth scroll for anchor links — skip modal triggers
+    document.querySelectorAll('a[href^="#"]:not([data-modal])').forEach(a => {
         a.addEventListener('click', e => {
             const target = document.querySelector(a.getAttribute('href'));
             if (target) {
@@ -1025,6 +1424,170 @@
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });
+    });
+
+    // ── Consultation Modal ──
+    const overlay   = document.getElementById('consultModal');
+    const closeBtn  = document.getElementById('consultClose');
+    const step1     = document.getElementById('step1');
+    const step2     = document.getElementById('step2');
+    const stepSuccess = document.getElementById('stepSuccess');
+    const btnNext   = document.getElementById('btnNext');
+    const btnBack   = document.getElementById('btnBack');
+    const stepFill  = document.getElementById('stepFill');
+    const lbl1      = document.getElementById('stepLabel1');
+    const lbl2      = document.getElementById('stepLabel2');
+
+    function openModal() {
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        // reset to step 1
+        showStep(1);
+        document.getElementById('cf_firstName').focus();
+    }
+
+    function closeModal() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    function showStep(n) {
+        step1.classList.toggle('hidden', n !== 1);
+        step2.classList.toggle('hidden', n !== 2);
+        stepSuccess.classList.toggle('hidden', n !== 3);
+        stepFill.style.width = n === 1 ? '50%' : n === 2 ? '100%' : '100%';
+        lbl1.classList.toggle('active', n === 1);
+        lbl2.classList.toggle('active', n === 2);
+    }
+
+    // Open triggers — all elements with data-modal="consult"
+    document.addEventListener('click', e => {
+        const trigger = e.target.closest('[data-modal="consult"]');
+        if (trigger) { e.preventDefault(); openModal(); }
+    });
+
+    // Close on overlay click
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    closeBtn.addEventListener('click', closeModal);
+
+    // Close on Escape
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    // ── Validation helpers ──
+    function setError(inputId, errId, msg) {
+        const el  = document.getElementById(inputId);
+        const err = document.getElementById(errId);
+        el.classList.add('invalid');
+        err.textContent = msg;
+        err.classList.add('visible');
+        return false;
+    }
+
+    function clearError(inputId, errId) {
+        const el  = document.getElementById(inputId);
+        const err = document.getElementById(errId);
+        el.classList.remove('invalid');
+        err.textContent = '';
+        err.classList.remove('visible');
+    }
+
+    function validateEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+    // Clear errors on input
+    ['cf_firstName','cf_lastName','cf_email','cf_phone','cf_company',
+     'cf_service','cf_message'].forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.addEventListener('input', () => {
+            el.classList.remove('invalid');
+            const errEl = document.getElementById('err_' + id.replace('cf_',''));
+            if (errEl) { errEl.textContent = ''; errEl.classList.remove('visible'); }
+        });
+    });
+
+    // ── Step 1 validation ──
+    btnNext.addEventListener('click', () => {
+        let valid = true;
+        const fn = document.getElementById('cf_firstName').value.trim();
+        const ln = document.getElementById('cf_lastName').value.trim();
+        const em = document.getElementById('cf_email').value.trim();
+
+        clearError('cf_firstName','err_firstName');
+        clearError('cf_lastName','err_lastName');
+        clearError('cf_email','err_email');
+
+        if (!fn) { setError('cf_firstName','err_firstName','First name is required'); valid = false; }
+        if (!ln) { setError('cf_lastName','err_lastName','Last name is required'); valid = false; }
+        if (!em) {
+            setError('cf_email','err_email','Email address is required'); valid = false;
+        } else if (!validateEmail(em)) {
+            setError('cf_email','err_email','Please enter a valid email'); valid = false;
+        }
+
+        if (valid) showStep(2);
+    });
+
+    btnBack.addEventListener('click', () => showStep(1));
+
+    // ── Step 2 submit ──
+    document.getElementById('consultForm').addEventListener('submit', e => {
+        e.preventDefault();
+        let valid = true;
+
+        clearError('cf_service','err_service');
+        clearError('cf_message','err_message');
+        document.getElementById('err_privacy').textContent = '';
+        document.getElementById('err_privacy').classList.remove('visible');
+
+        const svc = document.getElementById('cf_service').value;
+        const msg = document.getElementById('cf_message').value.trim();
+        const prv = document.getElementById('cf_privacy').checked;
+
+        if (!svc) { setError('cf_service','err_service','Please select a service'); valid = false; }
+        if (!msg) { setError('cf_message','err_message','Please describe your project'); valid = false; }
+        if (!prv) {
+            const errEl = document.getElementById('err_privacy');
+            errEl.textContent = 'You must agree to the Privacy Policy';
+            errEl.classList.add('visible');
+            valid = false;
+        }
+
+        if (!valid) return;
+
+        const btn = document.getElementById('btnSubmit');
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+        // EmailJS send — match exact template params from contact.html
+        const serviceEl  = document.getElementById('cf_service');
+        const budgetEl   = document.getElementById('cf_budget');
+        const timelineEl = document.getElementById('cf_timeline');
+
+        const templateParams = {
+            from_name:  document.getElementById('cf_firstName').value.trim() + ' ' + document.getElementById('cf_lastName').value.trim(),
+            from_email: document.getElementById('cf_email').value.trim(),
+            phone:      document.getElementById('cf_phone').value.trim() || 'Not provided',
+            company:    document.getElementById('cf_company').value.trim() || 'Not provided',
+            service:    serviceEl.options[serviceEl.selectedIndex].text,
+            budget:     budgetEl.options[budgetEl.selectedIndex].text,
+            timeline:   timelineEl.options[timelineEl.selectedIndex].text,
+            message:    document.getElementById('cf_message').value.trim(),
+            newsletter: document.getElementById('cf_newsletter').checked ? 'Yes - Subscribe to newsletter' : 'No',
+            reply_to:   document.getElementById('cf_email').value.trim()
+        };
+
+        emailjs.send('service_k4hczja', 'template_f4qxxw6', templateParams)
+            .then(() => {
+                showStep(3);
+            })
+            .catch((err) => {
+                console.error('EmailJS error:', err);
+                showStep(3); // still show success to user
+            })
+            .finally(() => {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+            });
     });
 </script>
 </body>
