@@ -12,30 +12,30 @@ $blogPosts = @(
     },
     @{
         file = "blog-post-react-native.html"
-        title = "React Native vs Flutter: Choosing the Right Framework"
-        description = "A comprehensive comparison of React Native and Flutter for cross-platform mobile development."
+        title = "Google Ads vs Meta Ads: Which Is Right for Your Business?"
+        description = "A comprehensive comparison to help you decide where to invest your advertising budget for maximum results."
         image = "post-2.jpg"
         date = "2025-03-08"
-        author = "Sugan"
-        category = "App Development"
+        author = "Muthu Selvan"
+        category = "Google Ads"
     },
     @{
         file = "blog-post-unity.html"
-        title = "Unity Performance Optimization Tips for Mobile Games"
-        description = "Essential techniques to optimize your Unity games for better performance on mobile devices."
+        title = "Instagram Reels Strategy: How to Go Viral in 2025"
+        description = "Essential tips and techniques to create Reels that get maximum reach and engagement for your brand."
         image = "post-3.jpg"
         date = "2025-03-05"
-        author = "Sugan"
-        category = "Game Development"
+        author = "Muthu Selvan"
+        category = "Instagram Management"
     },
     @{
         file = "blog-post-seo.html"
-        title = "SEO Strategies That Actually Work in 2025"
-        description = "Discover the latest SEO techniques and strategies to improve your website's search rankings."
+        title = "Google Ads Strategies That Actually Work in 2025"
+        description = "Discover the latest Google Ads techniques and strategies to maximize your ROI and drive qualified leads."
         image = "post-4.jpg"
         date = "2025-03-03"
-        author = "Sugan"
-        category = "Digital Marketing"
+        author = "Muthu Selvan"
+        category = "Google Ads"
     },
     @{
         file = "blog-post-scraping.html"

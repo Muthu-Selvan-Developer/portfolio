@@ -7,9 +7,11 @@ Sitemap: https://developermuthu.com/sitemap.xml
 # Crawl-delay
 Crawl-delay: 1
 
-# Disallow test files
+# Disallow test files and old pages
 Disallow: /test-email.html
 Disallow: /*.ps1$
+Disallow: /old-index.html
+Disallow: /old_index.html
 
 # Allow all asset
 Allow: /asset/
